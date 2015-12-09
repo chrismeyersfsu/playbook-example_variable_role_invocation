@@ -1,0 +1,3 @@
+---
+# tasks file for bar
+- debug: msg="This is bar"

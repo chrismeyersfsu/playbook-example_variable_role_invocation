@@ -1,0 +1,3 @@
+---
+# tasks file for foobar
+- debug: msg="This is foobar"

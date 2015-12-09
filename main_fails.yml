@@ -1,0 +1,14 @@
+---
+- hosts: all
+  gather_facts: false
+  vars:
+    play_role_var: "bar"
+    #host_role_var: "foo"
+  pre_tasks:
+    - set_fact:
+        host_role_var: "foobar"
+      tags: host_var
+  roles:
+    - { role: "foo" }
+    - { role: "{{ play_role_var }}" }
+    - { role: "{{ host_role_var }}" }

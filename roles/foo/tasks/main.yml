@@ -1,0 +1,3 @@
+---
+# tasks file for foo
+- debug: msg="This is role foo"
